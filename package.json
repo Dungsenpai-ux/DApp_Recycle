@@ -1,0 +1,32 @@
+{
+  "name": "DApp_Recycle",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "apps/*",
+      "libs/*"
+    ],
+    "nohoist": [
+      "**/@nestjs",
+      "**/@nestjs/**"
+    ]
+  },
+  "devDependencies": {
+    "@nx/eslint": "21.5.2",
+    "eslint": "~8.57.0",
+    "nx": "21.5.2",
+    "prettier": "^3.6.2"
+  },
+  "scripts": {
+    "format": "prettier  \"{apps,libs,standalone}/**/*.{ts,tsx,js,json}\" --ignore-path .gitignore",
+    "format:check": "yarn format --check",
+    "format:write": "yarn format --write",
+    "tsc": "yarn nx run-many -t tsc",
+    "lint": "yarn nx run-many -t lint",
+    "validate": "yarn format:write && yarn lint && yarn tsc"
+  },
+  "dependencies": {}
+}
