@@ -53,18 +53,3 @@ Sau khi chạy, API sẽ hoạt động tại địa chỉ: `http://localhost:30
 ## Triển khai
 
 Bạn có thể triển khai ứng dụng NestJS lên các nền tảng đám mây như AWS thông qua [NestJS Mau](https://mau.nestjs.com). Tham khảo thêm tài liệu [deployment](https://docs.nestjs.com/deployment).
-
-## Tài nguyên tham khảo
-
-- [NestJS Documentation](https://docs.nestjs.com)
-- [NestJS Discord channel](https://discord.gg/G7Qnnhy)
-- [NestJS Devtools](https://devtools.nestjs.com)
-- [Deploy Mau](https://mau.nestjs.com)
-
-## License
-
-Dự án sử dụng giấy phép MIT.
-
----
-
-*Lưu ý*: README này chủ yếu mô tả backend API của hệ thống. Nếu dự án có thêm phần frontend hoặc tích hợp blockchain, bạn nên bổ sung thêm hướng dẫn sử dụng, kiến trúc và các chức năng liên quan.
